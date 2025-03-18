@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta bane="viewport" content="width=device-width, initial-scale=1"></meta>
+        <title>Bootstrap Template</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>
+
+            *:has(> video.fullscreen){
+                position: relative;
+            }
+            video.fullscreen{
+                height: 100%;
+                width: auto;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                z-index: -1;
+            }
+            @media (min-aspect-ratio: 16/9){
+                video.fullscreen{
+                    height:auto;
+                    width:100%;
+                }
+            }
+            #slide1-background-holder{
+                background-image: url(images/pexels-cottonbro-6862365.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        
+            #slide2-background-holder{
+                background-image: url(images/pexels-everson-mayer-478307-1481309.jpg);
+                background-size: cover;
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+
+            #slide3-background-holder{
+                background-image: url(images/vibe-for-bandcamp.png);
+                background-size: cover;
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+                      
+        </style>
+    </head>
+    <body>
+
+        <header class="position-relative vh-100 d-flex flex-column justify-content-center">
+            <div class="text-white text-center">
+                <h1 class="display-1">Project Title
+                </h1>
+                <p class="lead">A short tagline here about this project</p>
+            </div>
+            <div class="h-100 position-absolute w-100 top-1 start-0 video-holder z-n1">
+                <video class="fullscreen" src="images/studio-track.mp4" muted preload loop></video>
+            </div>
+
+        </header>
+
+        <div class="container">
+            <div class="row" justify-content-center>
+                <div class="col-12 col-sm-8 col-lg-6 colxxl-5">
+
+                    <h4 class="text-center mt-5">A short description of the story</h4>
+                    <p class="text-center">By Monica</p>
+                    <p class="text-center"><time datetime="2025-03-18">March 18, 2025</time></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora rerum, blanditiis architecto ex autem repudiandae natus quidem magni aliquam, maiores nihil facere perspiciatis quis praesentium repellat ab voluptate excepturi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora rerum, blanditiis architecto ex autem repudiandae natus quidem magni aliquam, maiores nihil facere perspiciatis quis praesentium repellat ab voluptate excepturi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora rerum, blanditiis architecto ex autem repudiandae natus quidem magni aliquam, maiores nihil facere perspiciatis quis praesentium repellat ab voluptate excepturi!</p>                    
+                </div>
+            </div><!--close .row-->
+
+            <div class="row justify-content-center">
+                <figure class=" col-12 col-sm-10">
+                    <div class="ratio ratio-4x3">
+                        <iframe src="https://storymaps.arcgis.com/stories/321ebc290a8e400c8967545bb79b179d" width="100%" height="auto" frameborder="0" allowfullscreen allow="geolocation"></iframe>                     
+                    </div>
+                    <figcaption class="figure-caption text-center">Photo by cottonbro studio</figcaption>
+                </figure>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-6 colxxl-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora rerum, blanditiis architecto ex autem repudiandae natus quidem magni aliquam, maiores nihil facere perspiciatis quis praesentium repellat ab voluptate excepturi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora rerum, blanditiis architecto ex autem repudiandae natus quidem magni aliquam, maiores nihil facere perspiciatis quis praesentium repellat ab voluptate excepturi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora rerum, blanditiis architecto ex autem repudiandae natus quidem magni aliquam, maiores nihil facere perspiciatis quis praesentium repellat ab voluptate excepturi!</p>                    
+                </div>
+            </div><!--close .row-->
+
+ 
+        </div><!--close .container>-->
+
+        <div class="container-fluid">
+            <!-- slide 1 -->
+             <div class="row justify-content-center">
+                <div id="slide1-background-holder" class="vh-100 z-n1 sticky-top">
+                </div>
+                <div class=" col-12 col-sm-6 bg-light">
+                    <figcaption class="figure-caption text-center">Photo by cottonbro studio</figcaption>
+                   <p class="m-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem maxime culpa molestias doloribus sint? Dolorem ipsam deserunt tempora est hic. Suscipit, ab? Ipsum accusantium ex molestias non voluptatum soluta! Sunt!</p> 
+                </div>
+                <div class="vh-100"></div>
+             </div>
+        </div>
+
+        <!-- slide 2 -->
+         <div class="row justify-content-start">
+            <div id="slide2-background-holder" class="vh-100 z-n1 sticky-top">
+                </div>
+                <div class="col-10 offset-1 col-sm-5 offset-6 bg-light">
+                    <figcaption class="figure-caption text-center">Photo by Everson Mayer</figcaption>
+                    <p class="m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nesciunt minus molestias. Ratione facilis nobis recusandae doloribus nihil quos, dolor aperiam cumque obcaecati incidunt, veritatis consectetur quod eaque velit delectus.</p>
+                </div>
+            <div class="vh-100"></div>
+            </div>
+        </div>
+
+               <!-- slide 3 -->
+               <div class="row justify-content-start">
+                <div id="slide3-background-holder" class="vh-100 z-n1 sticky-top">
+                    </div>
+                    <div class="col-10 offset-1 col-sm-5 offset-1 bg-light">
+                    <p class="m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nesciunt minus molestias. Ratione facilis nobis recusandae doloribus nihil quos, dolor aperiam cumque obcaecati incidunt, veritatis consectetur quod eaque velit delectus.</p>
+                    </div>
+                <div class="vh-100"></div>
+                </div>
+            </div> <!-- close container -->
+
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-8 col-lg-6 colxxl-5">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora rerum, blanditiis architecto ex autem repudiandae natus quidem magni aliquam, maiores nihil facere perspiciatis quis praesentium repellat ab voluptate excepturi!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora rerum, blanditiis architecto ex autem repudiandae natus quidem magni aliquam, maiores nihil facere perspiciatis quis praesentium repellat ab voluptate excepturi!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora rerum, blanditiis architecto ex autem repudiandae natus quidem magni aliquam, maiores nihil facere perspiciatis quis praesentium repellat ab voluptate excepturi!</p>                    
+                    </div>
+                </div><!--close .row-->
+    
+                
+            </div> 
+            <!-- close container -->
+
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <figure class="col-12 col-md-10 col-lg-8 col-xxl-6">
+                        <div class="ratio ratio-1x1">
+                            <iframe src="images/music-visualization-bars.gif" scrolling="no" frameborder="0" width="50%" height="50">
+
+                            </iframe>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <!-- close container -->
+
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-8 col-lg-6 colxxl-5">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora rerum, blanditiis architecto ex autem repudiandae natus quidem magni aliquam, maiores nihil facere perspiciatis quis praesentium repellat ab voluptate excepturi!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora rerum, blanditiis architecto ex autem repudiandae natus quidem magni aliquam, maiores nihil facere perspiciatis quis praesentium repellat ab voluptate excepturi!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora rerum, blanditiis architecto ex autem repudiandae natus quidem magni aliquam, maiores nihil facere perspiciatis quis praesentium repellat ab voluptate excepturi!</p>                    
+                    </div>
+                </div><!--close .row-->
+
+                <footer class="container-fluid bg-dark">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <p class="text-white text-center py-5">Project by Monica</p>
+                        </div>
+                    </div>
+                </footer>
+            
+        <script src="js/bootstrap.bundle.js"></script>
+    </body>
+
+    </html>
