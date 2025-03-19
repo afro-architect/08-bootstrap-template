@@ -57,7 +57,12 @@
                 background-position: right;
                 background-repeat: no-repeat;
             }
-
+            #iframe-content{
+            overflow-y: auto;
+            overflow-x: auto;
+            resize: both;
+            position: relative;
+            }
                      
         </style>
     </head>
@@ -162,7 +167,7 @@
                 <div class="row justify-content-center">
                     <figure class="col-12 col-md-10 col-lg-8 col-xxl-6">
                         <div class="ratio ratio-1x1">
-                            <iframe src="images/music-visualization-bars.gif" scrolling="no" frameborder="0" width="50vw" height="auto">
+                            <iframe src="images/music-visualization-bars.gif" id="iframe-content" scrolling="no" frameborder="0" width="50vw" height="auto">
 
                             </iframe>
                         </div>
