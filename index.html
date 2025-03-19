@@ -59,10 +59,11 @@
             }
             #iframe-content{
             resize: both;
-            overflow-y: auto;
-            overflow-x: auto;
             max-width: 100%; /* This makes it so if the device is under 600px, it will resize to be the width of the screen and it will not overflow */
-    -ms-zoom: 0.25;
+  transform: scale(0.6); /* Adjust the scale factor as needed */
+  transform-origin: top left; /* Keeps the iframe positioned from the top left */
+  overflow: hidden; /* Optional: Hides any content that exceeds the iframe size */
+                
             }
                      
         </style>
