@@ -8,9 +8,17 @@
         <style>
 
         .container1-content{
-            margin-top: 40vh; /* Adjust based on container height */
+            margin-top: 50vh; /* Adjust based on container height */
               padding: 20px;
         }
+
+            @media only screen and (max-width: 768px) {
+  .container1-content {
+    margin-top: 10vh; /* Reduce margin for mobile */
+    padding: 10px; /* Reduce padding for mobile */
+  }
+}
+            
             *:has(> video.fullscreen){
                 position: relative;
             }
